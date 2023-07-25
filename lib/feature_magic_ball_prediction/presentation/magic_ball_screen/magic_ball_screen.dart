@@ -20,6 +20,7 @@ class MagicBallScreen extends StatelessWidget {
               Theme.of(context).colorScheme.primary,
               Theme.of(context).colorScheme.secondary
             ])),
+        /// Проверяем размеры устройства для отображения шара предсказания
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth > 850) {
