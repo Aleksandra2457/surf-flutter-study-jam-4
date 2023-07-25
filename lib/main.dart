@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:surf_practice_magic_ball/screen/magic_ball_screen.dart';
+import 'config/routes/routes.dart';
+import 'config/themes/dark_theme.dart';
+import 'config/themes/light_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,12 +16,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MagicBallScreen(),
+    return MaterialApp.router(
+      routerConfig: goRouter,
+      theme: createLightTheme(),
+      darkTheme: createDarkTheme(),
+      themeMode: ThemeMode.system,
     );
   }
 }
