@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:surf_practice_magic_ball/helpers/screen_options.dart';
 import 'config/routes/routes.dart';
 import 'config/themes/dark_theme.dart';
 import 'config/themes/light_theme.dart';
