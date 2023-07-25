@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "args",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/args-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
@@ -54,6 +60,12 @@
       "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/flutter_lints-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_svg",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/flutter_svg-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "flutter_test",
@@ -116,6 +128,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "path_parsing",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/path_parsing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/aleksandralesovskaa/Desktop/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -158,10 +182,34 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "vector_graphics",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/vector_graphics-1.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vector_graphics_codec",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vector_graphics_compiler",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "xml",
+      "rootUri": "file:///Users/aleksandralesovskaa/.pub-cache/hosted/pub.dev/xml-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "surf_practice_magic_ball",
@@ -170,7 +218,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-07-25T08:17:08.973041Z",
+  "generated": "2023-07-25T11:35:51.492124Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }

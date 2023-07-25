@@ -5,6 +5,8 @@ import 'app_colors.dart';
 ThemeData createLightTheme() => ThemeData(
       useMaterial3: true,
       fontFamily: "Golos-Text-Medium",
-      scaffoldBackgroundColor: AppLightThemeColors.background01,
-      brightness: Brightness.light,
+      colorScheme: const ColorScheme.light(
+          primary: AppLightThemeColors.background01,
+          secondary: AppLightThemeColors.background02,
+          brightness: Brightness.light),
     );
