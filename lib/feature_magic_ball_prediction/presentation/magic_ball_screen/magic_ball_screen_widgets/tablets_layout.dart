@@ -40,7 +40,7 @@ class _MagicBallScreenTabletsLayoutState
       child: Column(
         children: [
           Padding(
-            padding: EdgeInsets.only(top: ScreenOptions.h(286)),
+            padding: EdgeInsets.only(top: ScreenOptions.h(146)),
             child: GestureDetector(
               onTap: () =>
                   context.read<PredictionBloc>().add(GetPredictionEvent()),
@@ -79,7 +79,7 @@ class _MagicBallScreenTabletsLayoutState
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: ScreenOptions.h(177)),
+            padding: EdgeInsets.only(bottom: ScreenOptions.h(56)),
             child: Text('Нажмите на шар\n или потрясите телефон',
                 textAlign: TextAlign.center,
                 style: TextStyle(
