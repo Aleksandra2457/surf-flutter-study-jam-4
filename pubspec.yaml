@@ -27,4 +27,7 @@ flutter:
 
   uses-material-design: true
   assets:
-    - assets/images/
+    - assets/images/mobiles_assets/dark_theme/
+    - assets/images/mobiles_assets/light_theme/
+    - assets/images/tablets_and_desktops_assets/dark_theme/
+    - assets/images/tablets_and_desktops_assets/light_theme/

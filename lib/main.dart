@@ -8,9 +8,9 @@ void main() async {
   runApp(const MyApp());
 }
 
-/// App,s main widget.
+/// Главный виджет приложения.
 class MyApp extends StatefulWidget {
-  /// Constructor for [MyApp].
+  /// Конструктор для [MyApp].
   const MyApp({Key? key}) : super(key: key);
 
   @override
@@ -20,12 +20,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      routerConfig: goRouter,
-      theme: createLightTheme(),
-      darkTheme: createDarkTheme(),
-      themeMode: ThemeMode.system,
+    /// Запрет на изменение размера шрифта через системные настройки
+    return MediaQuery(
+      data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+      child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        routerConfig: goRouter,
+        theme: createLightTheme(),
+        darkTheme: createDarkTheme(),
+        themeMode: ThemeMode.system,
+      ),
     );
   }
 }

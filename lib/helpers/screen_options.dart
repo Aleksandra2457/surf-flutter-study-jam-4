@@ -1,18 +1,16 @@
 import 'dart:math';
 
+/// Класс для расчета изменения размеров для реализации адаптивности элементов
 class ScreenOptions {
   double currentWidth = 375;
   double currentHeight = 812;
   final double defaultWidth = 375;
   final double defaultHeight = 812;
-  
-  /// Always return a singleton instance
+
   static final ScreenOptions _instance = ScreenOptions._internal();
 
-  /// Internal Constructor
   ScreenOptions._internal();
 
-  /// Consumable Constructor
   factory ScreenOptions(double currentWidth, double currentHeight) {
     _instance.currentWidth = currentWidth;
     _instance.currentHeight = currentHeight;
@@ -59,13 +57,4 @@ class ScreenOptions {
         ? fontSize * _scaleWidth
         : fontSize;
   }
-
-// static ss(double sideOfSquare) {
-//   return ScreenOptions._instance.defaultHeight <
-//       ScreenOptions._instance.currentHeight ||
-//       ScreenOptions._instance.defaultWidth <
-//           ScreenOptions._instance.currentWidth
-//       ? sideOfSquare * _scaleHeight
-//       : sideOfSquare;
-// }
 }
