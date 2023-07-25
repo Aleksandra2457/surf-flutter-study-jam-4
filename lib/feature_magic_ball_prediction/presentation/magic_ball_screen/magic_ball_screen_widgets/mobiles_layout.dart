@@ -41,41 +41,41 @@ class _MagicBallScreenMobileLayoutState
         children: [
           Padding(
             padding: EdgeInsets.only(top: ScreenOptions.h(177)),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                GestureDetector(
-                  onTap: () =>
-                      context.read<PredictionBloc>().add(GetPredictionEvent()),
-                  child: Image.asset(_platformBrightness == Brightness.dark
+            child: GestureDetector(
+              onTap: () =>
+            context.read<PredictionBloc>().add(GetPredictionEvent()),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Image.asset(_platformBrightness == Brightness.dark
                       ? 'assets/images/mobiles_assets/dark_theme/prediction_orb.png'
                       : 'assets/images/mobiles_assets/light_theme/prediction_orb.png'),
-                ),
-                BlocBuilder<PredictionBloc, PredictionState>(
-                  builder: (context, state) {
-                    return Center(
-                      child: Text(
-                        context
-                            .read<PredictionBloc>()
-                            .state
-                            .currentPrediction
-                            .reading,
+                  BlocBuilder<PredictionBloc, PredictionState>(
+                    builder: (context, state) {
+                      return Center(
+                        child: Text(
+                          context
+                              .read<PredictionBloc>()
+                              .state
+                              .currentPrediction
+                              .reading,
 
-                        /// TODO: Добавить height
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                            color: _platformBrightness == Brightness.dark
-                                ? Colors.white
-                                : Colors.black,
-                            fontWeight: FontWeight.w400,
-                            fontSize: ScreenOptions.sp(32)),
-                      ),
-                    );
-                  },
-                )
-              ],
+                          /// TODO: Добавить height
+                          textAlign: TextAlign.center,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                              color: _platformBrightness == Brightness.dark
+                                  ? Colors.white
+                                  : Colors.black,
+                              fontWeight: FontWeight.w400,
+                              fontSize: ScreenOptions.sp(32)),
+                        ),
+                      );
+                    },
+                  )
+                ],
+              ),
             ),
           ),
           Padding(
