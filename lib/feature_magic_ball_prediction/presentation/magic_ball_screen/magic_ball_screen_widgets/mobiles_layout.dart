@@ -62,6 +62,9 @@ class _MagicBallScreenMobileLayoutState
                             .reading,
 
                         /// TODO: Добавить height
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                             color: _platformBrightness == Brightness.dark
                                 ? Colors.white
