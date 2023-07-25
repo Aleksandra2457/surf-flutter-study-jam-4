@@ -1,16 +1,20 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'config/routes/routes.dart';
 import 'config/themes/dark_theme.dart';
 import 'config/themes/light_theme.dart';
+import 'helpers/http_overrides.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  HttpOverrides.global = MyHttpOverrides();
   runApp(const MyApp());
 }
 
-/// Главный виджет приложения.
+/// Главный виджет приложения
 class MyApp extends StatefulWidget {
-  /// Конструктор для [MyApp].
+  /// Конструктор для [MyApp]
   const MyApp({Key? key}) : super(key: key);
 
   @override
