@@ -20,6 +20,8 @@ class PredictionNetworkService implements PredictionService {
     try {
       var response = await http.get(Uri.parse('https://eightballapi.com/api'));
       var decodedResponse = await json.decode(utf8.decode(response.bodyBytes));
+
+      print(decodedResponse);
       if (response.statusCode != 200) {
         /// На этом этапе можно записывать логи в крашлитику по коду ответа
         currentPrediction = const Prediction(
