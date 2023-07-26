@@ -6,15 +6,17 @@
 
 ### IOS
 
-<img height="600" src="screenshots/Simulator Screenshot - Iphone 11 - 2023-07-26 at 08.32.06.png" width="300"/>
-
-<img height="600" src="screenshots/Simulator Screenshot - Iphone 11 - 2023-07-26 at 08.32.19.png" width="300"/>
+#### Темная тема
+<img height="600" src="../screenshots/ios_dark.png" width="300"/>
+#### Светлая тема
+<img height="600" src="../screenshots/ios_light.png" width="300"/>
 
 ### Android
 
-<img height="600" src="screenshots/Screenshot_1690349585.png" width="300"/>
-
-<img height="600" src="screenshots/Screenshot_1690349595.png" width="300"/>
+#### Темная тема
+<img height="600" src="../screenshots/android_dark.png" width="300"/>
+#### Светлая тема
+<img height="600" src="../screenshots/android_light.png" width="300"/>
 
 ## За основу взята чистая архитектура и в качестве State Management - Flutter_BLoC
 
