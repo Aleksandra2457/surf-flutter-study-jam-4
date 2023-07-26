@@ -78,6 +78,7 @@ class _MagicBallScreenTabletsLayoutState
               ),
             ),
           ),
+          const Spacer(),
           Padding(
             padding: EdgeInsets.only(bottom: ScreenOptions.h(56)),
             child: Text('Нажмите на шар\n или потрясите телефон',

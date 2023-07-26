@@ -24,9 +24,9 @@ class MagicBallScreen extends StatelessWidget {
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth > 850) {
-              return MagicBallScreenTabletsLayout();
+              return const MagicBallScreenTabletsLayout();
             } else {
-              return MagicBallScreenMobileLayout();
+              return const MagicBallScreenMobileLayout();
             }
           },
         ),
