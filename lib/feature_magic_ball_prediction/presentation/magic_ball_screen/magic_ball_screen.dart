@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:surf_practice_magic_ball/feature_magic_ball_prediction/presentation/magic_ball_screen/magic_ball_screen_widgets/mobiles_layout.dart';
+import 'package:surf_practice_magic_ball/feature_magic_ball_prediction/presentation/magic_ball_screen/magic_ball_screen_tablets_body.dart';
 
-import 'magic_ball_screen_widgets/tablets_layout.dart';
+import 'magic_ball_screen_mobile_body.dart';
 
 class MagicBallScreen extends StatelessWidget {
   const MagicBallScreen({Key? key}) : super(key: key);
@@ -24,9 +24,9 @@ class MagicBallScreen extends StatelessWidget {
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth > 850) {
-              return const MagicBallScreenTabletsLayout();
+              return const MagicBallScreenMobileBody();
             } else {
-              return const MagicBallScreenMobileLayout();
+              return const MagicBallScreenTabletsBody();
             }
           },
         ),
